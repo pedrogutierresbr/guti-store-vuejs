@@ -51,7 +51,6 @@
 				api.get(this.url).then((response) => {
 					this.productsTotal = Number(response.headers["x-total-count"]);
 					this.products = response.data;
-					console.log(response);
 				});
 			},
 		},
