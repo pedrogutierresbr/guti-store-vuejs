@@ -13,17 +13,30 @@
 
 <script>
 	import { api } from "@/services/index";
+	import { serialize } from "@/helpers/index";
 
 	export default {
 		name: "ProductsList",
 		data() {
 			return {
 				products: null,
+				productsPerPage: 9,
 			};
+		},
+		computed: {
+			url() {
+				const query = serialize(this.$route.query);
+				return `/produto?_limit=${this.productsPerPage}${query}`;
+			},
+		},
+		watch: {
+			url() {
+				this.getProducts();
+			},
 		},
 		methods: {
 			getProducts() {
-				api.get("/produto").then((response) => (this.products = response.data));
+				api.get(this.url).then((response) => (this.products = response.data));
 			},
 		},
 		created() {
