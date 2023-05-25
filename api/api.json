@@ -10,6 +10,17 @@
 			"numero": "25",
 			"estado": "RJ",
 			"cidade": "Rio de Janeiro"
+		},
+		{
+			"id": "pedro@pedro.com",
+			"email": "pedro@pedro.com",
+			"nome": "Pedro Gutierres",
+			"senha": "456",
+			"rua": "Rua Lá Longe",
+			"cep": "98765432",
+			"numero": "32",
+			"estado": "SP",
+			"cidade": "São José dos Campos"
 		}
 	],
 	"produto": [

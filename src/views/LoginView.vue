@@ -4,8 +4,8 @@
 		<form>
 			<label for="email">Email</label>
 			<input type="email" name="email" id="email" v-model="login.email" />
-			<label for="password">Senha</label>
-			<input type="password" name="password" id="password" v-model="login.password" />
+			<label for="senha">Senha</label>
+			<input type="password" name="senha" id="password" v-model="login.password" />
 			<button class="btn" @click.prevent="logIn">Logar</button>
 		</form>
 		<p class="lost-password">
@@ -32,7 +32,8 @@
 		},
 		methods: {
 			logIn() {
-				console.log("Logar");
+				this.$store.dispatch("getUser", this.login.email);
+				this.$router.push({ name: "user" });
 			},
 		},
 	};
