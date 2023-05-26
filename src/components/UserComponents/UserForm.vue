@@ -1,11 +1,11 @@
 <template>
 	<form>
-		<label for="name">Nome</label>
-		<input type="text" name="name" id="name" v-model="name" />
+		<label for="nome">Nome</label>
+		<input type="text" name="nome" id="nome" v-model="nome" />
 		<label for="email">Email</label>
 		<input type="email" name="email" id="email" v-model="email" />
-		<label for="password">Senha</label>
-		<input type="text" name="password" id="password" v-model="password" />
+		<label for="senha">Senha</label>
+		<input type="password" name="senha" id="senha" v-model="senha" />
 		<label for="cep">CEP</label>
 		<input type="text" name="cep" id="cep" v-model="cep" />
 		<label for="rua">Rua</label>
@@ -25,7 +25,18 @@
 </template>
 
 <script>
-	export default {};
+	import { mapFields } from "@/helpers/index";
+
+	export default {
+		name: "UserForm",
+		computed: {
+			...mapFields({
+				fields: ["nome", "email", "senha", "cep", "rua", "numero", "bairro", "cidade", "estado"],
+				base: "usuario",
+				mutation: "UPDATE_USUARIO",
+			}),
+		},
+	};
 </script>
 
 <style scoped>
