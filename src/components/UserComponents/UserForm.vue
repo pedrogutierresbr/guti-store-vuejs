@@ -33,7 +33,7 @@
 			...mapFields({
 				fields: ["nome", "email", "senha", "cep", "rua", "numero", "bairro", "cidade", "estado"],
 				base: "usuario",
-				mutation: "UPDATE_USUARIO",
+				mutations: "UPDATE_USER",
 			}),
 		},
 	};
