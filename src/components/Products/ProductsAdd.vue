@@ -24,6 +24,7 @@
 					preco: "",
 					descricao: "",
 					fotos: null,
+					vendido: "false",
 				},
 			};
 		},
