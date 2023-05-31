@@ -15,7 +15,7 @@
 					<router-link :to="{ name: 'userEdit' }">Editar Usuário</router-link>
 				</li>
 				<li>
-					<button @click="deslogar">Deslogar</button>
+					<button @click="logOut">Deslogar</button>
 				</li>
 			</ul>
 		</nav>
@@ -29,7 +29,7 @@
 	export default {
 		name: "UserView",
 		methods: {
-			async deslogar() {
+			async logOut() {
 				await this.$store.dispatch("logOutUser");
 				await this.$router.push({ name: "login" });
 			},
