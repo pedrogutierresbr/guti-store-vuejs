@@ -50,7 +50,7 @@
 		text-align: center;
 		font-size: 2rem;
 		margin-top: 40px;
-		color: #87f;
+		color: #35a58c;
 	}
 
 	form {
@@ -70,7 +70,7 @@
 	}
 
 	.lost-password:hover {
-		color: #87f;
+		color: #35a58c;
 		text-decoration: underline;
 	}
 </style>

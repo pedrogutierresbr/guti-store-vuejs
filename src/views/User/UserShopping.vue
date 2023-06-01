@@ -58,7 +58,7 @@
 	}
 
 	.seller span {
-		color: #e80;
+		color: #35a58c;
 	}
 
 	h2 {

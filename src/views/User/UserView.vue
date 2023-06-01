@@ -66,7 +66,7 @@
 	.sidenav a.router-link-exact-active,
 	.sidenav a:hover,
 	.sidenav button:hover {
-		background: #87f;
+		background: linear-gradient(225.29deg, #3fb984 0%, #1b2923 100%);
 		color: #fff;
 	}
 
