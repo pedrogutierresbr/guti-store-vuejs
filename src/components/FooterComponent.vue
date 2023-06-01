@@ -1,6 +1,6 @@
 <template>
 	<footer>
-		<p>Ranek</p>
+		<p><b>Guti Store</b></p>
 	</footer>
 </template>
 
@@ -12,7 +12,7 @@
 
 <style scoped>
 	footer {
-		background: #87f;
+		background: linear-gradient(225.29deg, #3fb984 0%, #1b2923 100%);
 		padding: 25px 0;
 		text-align: center;
 		font-size: 1.2rem;

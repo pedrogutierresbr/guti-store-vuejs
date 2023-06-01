@@ -2,7 +2,7 @@
 	<header>
 		<nav>
 			<router-link to="/" class="logo">
-				<img src="@/assets/ranek.svg" alt="Logo" />
+				<img src="@/assets/logo.svg" alt="Logo" />
 			</router-link>
 			<router-link class="btn" v-if="$store.state.login" to="/usuario">{{ name }}</router-link>
 			<router-link v-else to="/login" class="btn">Vender / Login</router-link>
@@ -31,10 +31,10 @@
 	}
 
 	.logo {
-		padding: 10px 0;
+		padding: 10px 0 0 40px;
 	}
 
 	.logo img {
-		width: 90px;
+		width: 40px;
 	}
 </style>

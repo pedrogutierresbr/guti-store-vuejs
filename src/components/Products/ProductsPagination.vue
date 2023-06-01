@@ -70,7 +70,7 @@
 
 	li a.router-link-exact-active,
 	li a:hover {
-		background: #87f;
+		background: #3fb984;
 		color: #fff;
 	}
 </style>

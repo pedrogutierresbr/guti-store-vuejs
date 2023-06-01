@@ -96,7 +96,7 @@
 	.btn {
 		display: block;
 		padding: 10px 30px;
-		background: #87f;
+		background: linear-gradient(225.29deg, #3fb984 0%, #1b2923 100%);
 		border-radius: 4px;
 		color: #fff;
 		text-align: center;
@@ -109,7 +109,6 @@
 	}
 
 	.btn:hover {
-		background: #65d;
 		transform: scale(1.1);
 	}
 

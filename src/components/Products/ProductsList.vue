@@ -103,7 +103,7 @@
 	}
 
 	.price {
-		color: #e80;
+		color: #35a58c;
 		font-weight: bold;
 	}
 

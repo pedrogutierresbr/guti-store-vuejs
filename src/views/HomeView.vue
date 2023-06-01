@@ -20,7 +20,7 @@
 
 <style scoped>
 	h1 {
-		color: #87f;
+		color: #3fb984;
 		margin-top: 40px;
 		font-size: 2rem;
 		text-align: center;
