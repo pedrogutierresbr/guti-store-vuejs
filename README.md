@@ -1,4 +1,4 @@
-# guti-store-vuejs
+# Guti Store
 
 ## Sobre o projeto
 
